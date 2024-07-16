@@ -96,4 +96,12 @@ p {
         float: left;
         margin-bottom: 20px; /* Add bottom margin */
     }
+
+    /* Landscape mode for small devices */
+    @media (max-width: 767px) and (orientation: landscape) {
+        /* Additional styles for landscape mode */
+        .col-sm-12 {
+            /* Adjust styles for landscape mode */
+        }
+    }
 }
