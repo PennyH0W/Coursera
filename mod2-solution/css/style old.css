@@ -1,0 +1,111 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+    padding: 15px;
+
+}
+
+.container {
+    width 95%;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    background-color: #f0f0f0; /* Light gray background color */
+    border: 1px solid #ccc; /* Light border for visibility */
+}
+
+.box {
+    background-color: #808080; /* Light gray background for row */
+    width: 400px;
+    padding: 0;
+    margin-bottom: 20px;
+    position: relative; /* Ensure relative positioning for .section-title */
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.section-title {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    float: right;
+    clear: both;
+    padding: 0px;
+    border: 1px solid black;
+    height: 20px;
+    width: 70px;I
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Change background and text colors for chicken, beef, and sushi IDs. */
+.section-text {
+  position: relative;
+  text-align: left;
+  padding: 0px;
+}
+
+#chicken .section-title {
+    background-color: pink;
+}
+
+#beef .section-title {
+    background-color: red;
+    text-col
+}
+
+#sushi .section-title {
+    background-color: yellow;
+}
+
+#beef .section-text {
+    color: white;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-4 {
+    display: inline-block; /* Ensures inline-block behavior */
+    text-align: left; 
+    width: 33.33%; /* Three columns side by side */
+    float: left; 
+    margin-bottom: 10px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-6 {
+    display: inline-block; /* Ensures inline-block behavior */
+    text-align: left; 
+    width: 50%; /* Two columns side by side */
+    float: left;
+    margin-bottom: 10px;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 991px) {
+  .col-sm-12 {
+    display: inline-block; /* Ensures inline-block behavior */
+    text-align: left; 
+    width: 100%; /* Full width, one column */
+    float: left;
+    margin-bottom: 10px; 
+}
+

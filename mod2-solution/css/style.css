@@ -1,9 +1,50 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px; /* Padding for the body to create margins around the screen */
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px; /* Padding for container to provide space around the edges */
+}
+
+.section {
+    background-color: #808080;
+    border: 1px solid #000; /* Black border for sections */
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative; /* Ensure relative positioning for section-title */
+}
+
 .section-title {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    padding: 0px;
-    border: 1px solid black;
+    top: 0;
+    right: 0;
+    background-color: lightblue;
+    padding: 5px;
+    border: 1px solid #000;
     font-weight: bold;
 }
 
@@ -13,17 +54,46 @@
 
 #beef .section-title {
     background-color: red;
+    color: white;
 }
 
 #sushi .section-title {
     background-color: yellow;
 }
 
-.Column-Lg, .Column-Md, .Column-Sm {
-    position: relative;
-    padding: 20px;
-    border: 1px solid black;
-    background-color: #D3D3D3;
-    margin: 10px;
-    flex: 1 1 30%;
+/* Large devices */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: calc(33.33% - 20px); /* Adjust for margin */
+        float: left;
+        margin-right: 20px; /* Horizontal margin */
+    }
+    .col-lg-4:last-child {
+        margin-right: 0; /* Remove margin for the last column */
+    }
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: calc(50% - 20px); /* Adjust for margin */
+        float: left;
+        margin-right: 20px; /* Horizontal margin */
+        margin-bottom: 20px; /* Bottom margin for rows */
+    }
+    
+    .col-md-12 {
+        width: 97.5%; /* Full width for single column */
+        float: left;
+        margin-bottom: 20px; /* Bottom margin for rows */
+    }
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: calc(100% - 20px); /* Adjust width for full row */
+        float: left;
+        margin-bottom: 20px; /* Add bottom margin */
+    }
 }
