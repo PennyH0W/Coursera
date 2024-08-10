@@ -17,6 +17,20 @@ header h1 {
     margin: 0;
 }
 
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* Container Styles */
 .container {
     margin-top: 1rem;
