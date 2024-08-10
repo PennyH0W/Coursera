@@ -11,6 +11,8 @@ header {
     background-color: #007bff; /* Bootstrap primary color */
     color: #ffffff;
     padding: 1rem 0;
+    text-align: left; /* Aligns text to the left */
+    padding-left: 1rem; /* Adds some padding to the left for spacing */
 }
 
 header h1 {
