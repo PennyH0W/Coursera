@@ -58,6 +58,7 @@ header h1 {
 }
 
 .card-text {
+    font-weight: normal; /* Sets font weight to normal */
     margin-bottom: .5rem;
 }
 
