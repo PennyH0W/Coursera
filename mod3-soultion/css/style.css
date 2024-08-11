@@ -51,7 +51,7 @@ header h1 {
 }
 
 /* Show hamburger only on small screens and below */
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .navbar-toggler {
         display: none;
     }
