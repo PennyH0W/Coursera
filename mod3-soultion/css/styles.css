@@ -8,11 +8,12 @@
 .navbar-brand {
     font-size: 1.5rem;
     color: #343a40; /* Darker gray text color for better contrast */
-    border-radius: 0.5rem;
 }
 
 .navbar-nav .nav-link {
     font-size: 1.2rem;
+    border-radius: 0.5rem;
+    color: black;
 }
 
 /* Custom color for the dropdown navbar */
