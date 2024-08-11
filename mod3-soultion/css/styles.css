@@ -31,15 +31,17 @@
 
 /* Custom background color for cards */
 .card {
-    background-color: #6c757d; /* Gray background */
-    color: #ffffff; /* White text for contrast */
+    background-color: #a1aab4; /* Gray background */
+    color: black
     border: 1px solid #dee2e6; /* Optional: Customize border color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Customize shadow */
+    border-radius: 0; /* Remove rounded corners */
 }
 
 /* Custom gray background for header area*/
 .bg-gray {
-    background-color: #333333; /* Charcoal gray */
+    background-color: #6b6666; /* Dark gray */
+    color: black;
 }
 
 
