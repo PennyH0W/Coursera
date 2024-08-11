@@ -50,11 +50,15 @@ header h1 {
     display: none; /* Hide by default on larger screens */
     flex-direction: column; /* Stack menu items vertically */
 
+    .navbar-nav.show {
+        display: flex; /* Show dropdown menu when toggled */
+        flex-direction: column;
+    }
 
 /* Navbar for Mobile and Small Screens */
 @media (max-width: 767px) { /* Mobile and Small Screens */
-    .navbar-toggler {
-        display: block; /* Show hamburger icon */
+    .navbar-nav {
+        display: none; /* Hide by default */
     }
 
     .navbar-nav {
@@ -69,7 +73,6 @@ header h1 {
 
     .navbar-nav.show {
         display: flex; /* Show dropdown menu when toggled */
-        flex-direction: column;
     }
 
     .navbar-nav .nav-item {
@@ -87,7 +90,7 @@ header h1 {
     }
 }
     
-/* Hide Navbar on Larger Screens */
+/* Hide Navbar and Hamburger Icon Larger Screens */
 @media (min-width: 768px) {
     .navbar-nav {
         display: none; /* Show navbar as flex layout */
