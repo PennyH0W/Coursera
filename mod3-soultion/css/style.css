@@ -69,6 +69,7 @@ header h1 {
         width: 100%;
         background-color: #007bff; /* Match header background color */
         z-index: 1000;
+        flex-direction: column; /* Stack menu items vertically */
     }
 
     .navbar-nav.show {
@@ -93,10 +94,7 @@ header h1 {
 /* Hide Navbar and Hamburger Icon Larger Screens */
 @media (min-width: 768px) {
     .navbar-nav {
-        display: none; /* Show navbar as flex layout */
-        position: static; /* Reset position for larger screens */
-        flex-direction: row; /* Align items horizontally */
-        background-color: transparent; /* Transparent background */
+        display: none; /* Hide the navbar */
     }
 
     /* Hide Hamburger Icon on Larger Screens */
