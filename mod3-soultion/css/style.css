@@ -50,6 +50,26 @@ header h1 {
     display: block;
 }
 
+/* Collapsible Menu Styles */
+.navbar-nav {
+    width: 100%;
+    background-color: #007bff; /* Match header background color */
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-link {
+    color: #ffffff;
+    padding: 1rem; /* Add padding for better spacing */
+    display: block; /* Ensure full width for each menu item */
+}
+
+.nav-link:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
 /* Show hamburger only on small screens and below */
 @media (min-width: 768px) {
     .navbar-toggler {
