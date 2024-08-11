@@ -19,6 +19,8 @@
     background-color: #e0e0e0; /* Example: Slightly darker gray background */
     color: black;
     border-radius: 0.5rem;
+    width: 100%;
+    margin 0;
 }
 
 /* Custom styles for the card */
