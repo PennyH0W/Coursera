@@ -38,7 +38,7 @@ header h1 {
     display: block;
 }
 
-/* Collapsible Navbar Styles */
+/* General Navbar Styles */
 .navbar-nav {
     width: 100%;
     background-color: #007bff; /* Match header background color */
@@ -75,26 +75,15 @@ header h1 {
     }
 }
 
-/* Show navbar normally on larger screens */
+/* Hide Navbar on Medium and Large Screens */
 @media (min-width: 768px) {
-    .navbar-toggler {
-        display: none; /* Hide the hamburger menu on larger screens */
-    }
-
     .navbar-nav {
-        display: flex; /* Show the navbar normally on larger screens */
-        position: static; /* Position normally */
-        top: auto;
-        left: auto;
-        flex-direction: row; /* Align menu items in a row */
+        display: none; /* Hide the navbar on md and larger screens */
     }
 
-    .navbar-nav .nav-link {
-        padding: 0.5rem 1rem; /* Adjust padding for larger screens */
-    }
-
-    .navbar-nav .nav-link:hover {
-        background-color: transparent; /* Remove background color on hover */
+    /* Hide hamburger icon on md and larger screens */
+    .navbar-toggler {
+        display: none;
     }
 }
 
