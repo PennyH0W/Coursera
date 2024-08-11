@@ -116,7 +116,8 @@ header h1 {
     margin-bottom: .5rem;
 }
 
-.card-text {
+/* Ensure quotes within card-text are not bold */
+.card-text blockquote {
     font-weight: normal; /* Sets font weight to normal */
     margin-bottom: .5rem;
 }
