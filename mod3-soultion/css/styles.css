@@ -14,7 +14,7 @@ body {
 .navbar-nav .nav-item .nav-link {
     border: 1px solid #000000; /* Black border */
     padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
+    margin-left: 15px; /* Add space to the left of each link */
     background-color: #f0f0f0; /* Light gray background */
     width: 100%;
     color: black;
@@ -25,7 +25,7 @@ body {
     background-color: #f0f0f0; /* Light gray background */
     border: 1px solid #000000; /* Black border */
     padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
+    margin-left: 15px; /* Add space to the left of each link */
     width: 100%;
     color: black;
 }
@@ -44,6 +44,29 @@ body {
 .navbar-nav .nav-link {
     font-size: 1.2rem;
 }
+
+/* Hover effect for all navbar links */
+.navbar-nav .nav-link:hover {
+    color: #0056b3; /* Change the color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+
+/* Ensure the collapse (hamburger icon) is still right-aligned */
+.navbar-collapse {
+    justify-content: flex-end; /* Ensures right alignment */
+}
+
+/* Add right margin to the hamburger icon */
+.navbar-toggler {
+    margin-right: 15px; /* Adjust the value as needed */
+}
+
+/* Add left margin to the dropdown menu */
+.navbar-nav {
+    margin-left: 15px; /* Adjust the value as needed */
+}
+
 
 /* Custom color for the dropdown navbar */
 #navbarNav {
