@@ -3,7 +3,6 @@
 /* Custom styles for the navbar */
 .navbar {
     margin-bottom: 20px;
-    background-color: #e9ecef; /* Light gray background color for the entire navbar */
 }
 
 .navbar-brand {
@@ -28,19 +27,19 @@
 .card-text {
     font-size: 1rem;
     line-height: 1.5;
-    background-color: #f8f9fa; /* Light gray background color */
+    background-color: #c0c0c0; /* Silver gray */
 }
 
 /* Style for the header */
 .header-background {
-    background-color: #f8f9fa; /* Light background for header */
+    background-color: #a9a9a9; /* Dark gray */
     padding: 20px;
     text-align: center;
 }
 
 /* Style for the menu sections */
 .menu-section {
-    background-color: #e9ecef; /* Different background for menu sections */
+    background-color: #c0c0c0; /* Silver gray */
     padding: 20px;
     margin: 10px 0;
 }
