@@ -16,6 +16,7 @@ header {
 }
 
 header h1 {
+    float: left; /* Aligns the heading to the left */
     margin: 0;
 }
 
