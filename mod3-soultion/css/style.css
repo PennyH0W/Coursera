@@ -28,6 +28,7 @@ header h1 {
     background-color: transparent;
     border: none;
     padding: 0.5rem 1rem;
+    display: none; /* Hidden by default on larger screens */
 }
 
 /* Bootstrap Hamburger Icon */
@@ -82,15 +83,17 @@ header h1 {
     .navbar-toggler {
         display: block; */
     }
-}
 
-/* Show or Hide Navbar per screen size */
-@media (min-width: 768px) {
+/* Hide Navbar on Larger Screens */
+@media (min-width: 992px) {
     .navbar-nav {
-        display: none; /* Hide the navbar on md and larger screens */
+        display: flex; /* Show navbar as flex layout */
+        position: static; /* Reset position for larger screens */
+        flex-direction: row; /* Align items horizontally */
+        background-color: transparent; /* Transparent background */
     }
 
-    /* Hide hamburger icon on md and larger screens */
+    /* Hide Hamburger Icon on Larger Screens */
     .navbar-toggler {
         display: none;
     }
