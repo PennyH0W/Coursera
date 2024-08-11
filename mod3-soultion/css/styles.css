@@ -3,11 +3,12 @@
 /* Custom styles for the navbar */
 .navbar {
     margin-bottom: 20px;
+    background-color: #e9ecef; /* Light gray background color for the entire navbar */
 }
 
 .navbar-brand {
     font-size: 1.5rem;
-    background-color: #e9ecef; /* Light gray background color */
+    color: #343a40; /* Darker gray text color for better contrast */
 }
 
 .navbar-nav .nav-link {
@@ -34,7 +35,6 @@
 footer {
     margin-top: 20px;
     padding: 10px;
-    background-color: #007bff;
     background-color: #6c757d; /* Gray background color */
     color: #f8f9fa; /* Light gray text color */
 }
