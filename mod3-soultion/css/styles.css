@@ -1,7 +1,7 @@
 /* styles.css */
 
 body {
-    color: #000000; /* Black */
+    color: #000000 !important; /* Black */
 }
 
 /* Custom styles for the navbar */
