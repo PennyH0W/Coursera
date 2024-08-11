@@ -30,7 +30,7 @@
 }
 
 /* Custom background color for cards */
-.card-custom-bg {
+.card {
     background-color: #6c757d; /* Gray background */
     color: #ffffff; /* White text for contrast */
     border: 1px solid #dee2e6; /* Optional: Customize border color */
