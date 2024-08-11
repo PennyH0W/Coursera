@@ -49,7 +49,7 @@ footer {
 @media (min-width: 768px) {
     .navbar-toggler, /* Assuming this is the class for the hamburger icon */
     .navbar-collapse { /* Assuming this is the class for the expanded navbar */
-        display: none;
+        display: none !important;;
     }
-    
+
 }
