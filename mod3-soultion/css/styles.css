@@ -12,13 +12,13 @@
 
 .navbar-nav .nav-link {
     font-size: 1.2rem;
-    border-radius: 0.5rem;
-    color: black;
 }
 
 /* Custom color for the dropdown navbar */
 #navbarNav {
     background-color: #e0e0e0; /* Example: Slightly darker gray background */
+    color: black;
+    border-radius: 0.5rem;
 }
 
 /* Custom styles for the card */
