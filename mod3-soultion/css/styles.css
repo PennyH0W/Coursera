@@ -31,6 +31,22 @@
     background-color: #f8f9fa; /* Light gray background color */
 }
 
+/* Style for the header */
+.header-background {
+    background-color: #f8f9fa; /* Light background for header */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the menu sections */
+.menu-section {
+    background-color: #e9ecef; /* Different background for menu sections */
+    padding: 20px;
+    margin: 10px 0;
+}
+
+
+
 /* Custom styles for the footer */
 footer {
     margin-top: 20px;
