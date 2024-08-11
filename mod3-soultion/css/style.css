@@ -17,20 +17,8 @@ header {
     justify-content: space-between; /* Space between title and hamburger */
 }
 
-/* Header Styles */
-header {
-    background-color: #007bff; /* Bootstrap primary color */
-    color: #ffffff;
-    padding: 1rem 0;
-    padding-left: 1rem;
-    overflow: hidden; /* To clear the floats */
-    height: 80px; /* Fixed height to prevent shrinking */
-}
-}
-
 /* Food, LLC Title */
 header h1 {
-    float: left;
     margin: 0;
 }
 
@@ -79,11 +67,6 @@ header h1 {
 
 
 /* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: flex-end; /* Aligns content to the right */
-}
-
 .navbar-brand {
     color: #ffffff;
     font-size: 1.5rem;
