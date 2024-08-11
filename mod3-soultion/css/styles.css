@@ -29,7 +29,15 @@
     line-height: 1.5;
 }
 
-/* Custom gray background */
+/* Custom background color for cards */
+.card-custom-bg {
+    background-color: #6c757d; /* Gray background */
+    color: #ffffff; /* White text for contrast */
+    border: 1px solid #dee2e6; /* Optional: Customize border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Customize shadow */
+}
+
+/* Custom gray background for header area*/
 .bg-gray {
     background-color: #333333; /* Charcoal gray */
 }
