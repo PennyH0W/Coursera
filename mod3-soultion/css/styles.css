@@ -1,5 +1,9 @@
 /* styles.css */
 
+body {
+    color: #000000; /* Black */
+}
+
 /* Custom styles for the navbar */
 .navbar {
     margin-bottom: 20px;
@@ -21,6 +25,8 @@
     border: black;
     border-width: 2px;
     width: 100%;
+    margin: 0%;
+    padding: 0%;
 }
 
 /* Custom styles for the card */
@@ -47,14 +53,13 @@
     border-radius: 0; /* Remove rounded corners */
 }
 
-
-
  
 /* Custom gray background for header area*/
 .bg-gray {
     background-color: #97999d; /* Dark gray */
     color: black;
 }
+
 
 
 /* Responsive adjustments */
