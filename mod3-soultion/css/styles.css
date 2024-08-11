@@ -45,13 +45,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Hover effect for all navbar links */
-.navbar-nav .nav-link:hover {
-    color: #0056b3; /* Change the color on hover */
-    text-decoration: underline; /* Optional: Add underline on hover */
-}
-
-
 /* Ensure the collapse (hamburger icon) is still right-aligned */
 .navbar-collapse {
     justify-content: flex-end; /* Ensures right alignment */
