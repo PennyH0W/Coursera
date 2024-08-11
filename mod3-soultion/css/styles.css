@@ -8,7 +8,6 @@ body {
 /* Custom styles for navbar collapse */
 .custom-navbar-collapse {
     background-color: #f0f0f0; /* Light gray background for navbar collapse */
-    color: black;
 }
 
 /* Custom styles for navbar links */
@@ -18,6 +17,7 @@ body {
     margin: 0; /* Remove margins */
     background-color: #f0f0f0; /* Light gray background */
     width: 100%;
+    color: black;
 }
 
 /* Ensure that the active link has consistent styles */
@@ -27,6 +27,7 @@ body {
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
     width: 100%;
+    color: black;
 }
 
 
