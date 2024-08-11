@@ -73,6 +73,10 @@ header h1 {
     .navbar-nav .nav-link:hover {
         background-color: #0056b3; /* Darker background on hover */
     }
+    /* Show hamburger icon only on small screens */
+    .navbar-toggler {
+        display: block;
+    }
 }
 
 /* Hide Navbar on Medium and Large Screens */
