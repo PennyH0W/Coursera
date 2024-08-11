@@ -4,76 +4,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Page</title>
+    <title>Assignment Solution for Module 3</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="css/style2.css">
+    <!-- Link to Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ADLaM+Display:wght@400;700&display=swap">
 </head>
 <body>
-    <!-- Header and Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Food, LLC</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <h1>Food, LLC</h1>
+        <!-- Hamburger Icon -->
+        <button class="navbar-toggler d-sm-block d-md-none" type="button" data-toggle="collapse" data-target="#menuCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+    </header>
+    <!-- Collapsible Menu -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="menuCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chicken</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Menu</a>
+                    <a class="nav-link" href="#">Beef</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#">Sushi</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-    <!-- Main Content -->
-    <div class="container mt-4">
-        <h1 class="text-center mb-4">Our Menu</h1>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Chicken</h2>
-                        <p class="card-text">"Meat is wonderful company; it warms us inside, and helps us to relax and enjoy every bite." - Julia Child</p>
-                        <p class="card-text">"Food is not just eating energy. It's an experience." - Martha Stewart</p>
-                        <p class="card-text">"Good food is the foundation of genuine happiness." - Gordon Ramsay</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Beef</h2>
-                        <p class="card-text">"Meat is wonderful company; it warms us inside, and helps us to relax and enjoy every bite." - Julia Child</p>
-                        <p class="card-text">"Food is not just eating energy. It's an experience." - Martha Stewart</p>
-                        <p class="card-text">"Good food is the foundation of genuine happiness." - Gordon Ramsay</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Sushi</h2>
-                        <p class="card-text">"Meat is wonderful company; it warms us inside, and helps us to relax and enjoy every bite." - Julia Child</p>
-                        <p class="card-text">"Food is not just eating energy. It's an experience." - Martha Stewart</p>
-                        <p class="card-text">"Good food is the foundation of genuine happiness." - Gordon Ramsay</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <!-- Your content here -->
     </div>
-
-    <!-- Footer -->
-    <footer class="bg-primary text-white text-center py-3">
-        <p>&copy; 2024 Food, LLC. All rights reserved.</p>
-    </footer>
-
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
