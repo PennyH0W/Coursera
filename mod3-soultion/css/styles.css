@@ -36,7 +36,9 @@ footer {
 }
 
 /* Responsive adjustments */
-@media (max-width: 767.98px) {
+
+/* Media query for medium screens and smaller */
+@media (max-width: 768px) {
     .card-title {
         font-size: 1.25rem;
     }
@@ -44,18 +46,26 @@ footer {
     .card-text {
         font-size: 0.9rem;
     }
+    
+    /* Show Navbar and Hamburger Icon for Small Screens */
+    .navbar-nav {
+        display: block; /* Ensure the navbar is visible */
+    }
+
+    .navbar-toggler {
+        display: block; /* Ensure the hamburger icon is visible */
+    }
+}
 
 /* Media query for medium and large screens */
+
 /* Hide Navbar and Hamburger Icon Larger Screens */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .navbar-nav {
         display: none; /* Hide the navbar */
     }
 
-    /* Hide Hamburger Icon on Larger Screens */
     .navbar-toggler {
-        display: none;
+        display: none; /* Hide the hamburger icon */
     }
-}
-
 }
