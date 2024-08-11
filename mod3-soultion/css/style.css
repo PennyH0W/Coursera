@@ -15,10 +15,48 @@ header {
     padding-left: 1rem; /* Adds some padding to the left for spacing */
 }
 
-header h1 {
-    float: left; /* Aligns the heading to the left */
-    margin: 0;
+/* Header Styles */
+header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #ffffff;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    overflow: hidden; /* To clear the floats */
+    height: 80px; /* Fixed height to prevent shrinking */
 }
+}
+
+/* Food, LLC Title */
+header h1 {
+    float: left;
+    margin: 0;
+    line-height: 80px; /* Aligns the text vertically in the fixed height */
+}
+
+/* Hamburger Icon */
+.navbar-toggler {
+    float: right;
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    height: 100%; /* Ensures the icon is vertically centered */
+}
+
+/* Bootstrap Hamburger Icon */
+.navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%288%2c 8%2c 8%2c 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    display: block;
+}
+
+/* Show hamburger only on small screens and below */
+@media (min-width: 576px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
 
 /* Navbar Styles */
 .navbar {
