@@ -54,6 +54,10 @@ header h1 {
 @media (max-width: 767px) { /* Adjust this breakpoint as needed */
     .navbar-nav {
         display: flex; /* Show dropdown on small screens */
+        position: static; /* Position normally */
+        top: auto; /* Reset top positioning */
+        left: auto; /* Reset left positioning */
+        width: 100%; /* Ensure full width */
     }
 
     .navbar-nav .nav-item {
