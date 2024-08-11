@@ -9,10 +9,6 @@ body {
 .custom-navbar-collapse {
     background-color: #f0f0f0; /* Light gray background for navbar collapse */
     color: black;
-    border: 1px solid #000000; /* Black border */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-    background-color: #f0f0f0; /* Light gray background */
 }
 
 /* Custom styles for navbar links */
