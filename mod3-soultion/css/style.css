@@ -15,7 +15,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Space between title and hamburger */
-    position: relative; /* Ensure positioning of dropdown menu is relative to header */
 }
 
 /* Food, LLC Title */
@@ -43,16 +42,17 @@ header h1 {
     width: 100%;
     background-color: #007bff; /* Match header background color */
     z-index: 1000; /* Ensure dropdown is on top */
+    position: absolute; /* Position dropdown below header */
+    top: 80px; /* Position it right below the header */
+    left: 0;
+    display: none; /* Hide by default */
+    flex-direction: column; /* Stack menu items vertically */
 }
 
 /* Navbar for Small Screens */
 @media (max-width: 767px) { /* Adjust this breakpoint as needed */
     .navbar-nav {
-        position: absolute; /* Position dropdown below header */
-        top: 80px; /* Position it right below the header */
-        left: 0;
-        display: flex;
-        flex-direction: column; /* Stack menu items vertically */
+        display: flex; /* Show menu on small screens */
     }
 
     .navbar-nav .nav-item {
@@ -69,6 +69,7 @@ header h1 {
         background-color: #0056b3; /* Darker background on hover */
     }
 }
+
 
 /* Navbar for Larger Screens */
 @media (min-width: 768px) {
