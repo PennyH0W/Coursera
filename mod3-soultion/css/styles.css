@@ -8,10 +8,16 @@
 .navbar-brand {
     font-size: 1.5rem;
     color: #343a40; /* Darker gray text color for better contrast */
+    border-radius: 0.5rem;
 }
 
 .navbar-nav .nav-link {
     font-size: 1.2rem;
+}
+
+/* Custom color for the dropdown navbar */
+#navbarNav {
+    background-color: #e0e0e0; /* Example: Slightly darker gray background */
 }
 
 /* Custom styles for the card */
@@ -38,16 +44,7 @@
     border-radius: 0; /* Remove rounded corners */
 }
 
-/* Custom Card Body Styles*/
-#sushi {
-    background-color: #e9ecef; /* Example: Slightly darker gray background */
-}
-#sushi {
-    background-color: #c5cad0; /* Example: Slightly darker gray background */
-}
-#sushi {
-    background-color: #6d6f71; /* Example: Slightly darker gray background */
-}
+
 
  
 /* Custom gray background for header area*/
