@@ -37,7 +37,7 @@ header h1 {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%288%2c 8%2c 8%2c 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     display: block;
 }
-/* General Navbar Styles */
+/* Collapsible  Navbar Styles */
 .navbar-nav {
     width: 100%;
     background-color: #007bff; /* Match header background color */
@@ -47,12 +47,14 @@ header h1 {
     left: 0;
     display: none; /* Hide by default */
     flex-direction: column; /* Stack menu items vertically */
+    display: none; /* Hide by default */
+
 }
 
 /* Navbar for Small Screens */
 @media (max-width: 767px) { /* Adjust this breakpoint as needed */
     .navbar-nav {
-        display: flex; /* Show menu on small screens */
+        display: clock; /* Show dropdown */
     }
 
     .navbar-nav .nav-item {
@@ -70,6 +72,19 @@ header h1 {
     }
 }
 
+/* Show hamburger only on small screens and below */
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none; /* Hide the hamburger menu on larger screens */
+    }
+
+    .navbar-nav {
+        display: block; /* Show the navbar normally on larger screens */
+        position: static; /* Position normally */
+        top: auto;
+        left: auto;
+    }
+}
 
 /* Navbar for Larger Screens */
 @media (min-width: 768px) {
