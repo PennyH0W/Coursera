@@ -87,14 +87,18 @@ header h1 {
     }
 }
     
-/* Hide Navbar on Medium and Larger Screens */
-@media (min-width: 768px) {
+/* Hide Navbar on Larger Screens */
+@media (min-width: 992px) {
     .navbar-nav {
-        display: none; /* Hide the navbar on md and larger screens */
+        display: flex; /* Show navbar as flex layout */
+        position: static; /* Reset position for larger screens */
+        flex-direction: row; /* Align items horizontally */
+        background-color: transparent; /* Transparent background */
     }
 
+    /* Hide Hamburger Icon on Larger Screens */
     .navbar-toggler {
-        display: none; /* Hide hamburger icon on md and larger screens */
+        display: none;
     }
 }
 
