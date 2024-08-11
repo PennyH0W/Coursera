@@ -49,21 +49,27 @@ header h1 {
     left: 0;
     display: none; /* Hide by default on larger screens */
     flex-direction: column; /* Stack menu items vertically */
-}
 
-/* Navbar for Small Screens */
-@media (max-width: 767px) { /* Adjust this breakpoint as needed */
+
+/* Navbar for Mobile and Small Screens */
+@media (max-width: 767px) { /* Mobile and Small Screens */
+    .navbar-toggler {
+        display: block; /* Show hamburger icon */
+    }
 
     .navbar-nav {
-        display: none; /* Hide by default */
-        position: absolute; /* Ensure it positions below header */
-        top: 80px; /* Position it right below the header */
+        display: none; /* Hide navbar on mobile and small screens by default */
+        position: absolute;
+        top: 80px; /* Adjust based on header height */
         left: 0;
-        width: 100%; /* Ensure full width */
+        width: 100%;
+        background-color: #007bff; /* Match header background color */
+        z-index: 1000;
     }
 
     .navbar-nav.show {
-        display: flex; /* Show the dropdown when active */
+        display: flex; /* Show dropdown menu when toggled */
+        flex-direction: column;
     }
 
     .navbar-nav .nav-item {
@@ -72,30 +78,23 @@ header h1 {
 
     .navbar-nav .nav-link {
         color: #ffffff;
-        padding: 1rem; /* Add padding for better spacing */
-        display: block; /* Ensure full width for each menu item */
+        padding: 1rem;
+        display: block;
     }
 
     .navbar-nav .nav-link:hover {
         background-color: #0056b3; /* Darker background on hover */
     }
-    /* Show hamburger icon only on small screens 
-    .navbar-toggler {
-        display: block; */
-    }
-
-/* Hide Navbar on Larger Screens */
-@media (min-width: 992px) {
+}
+    
+/* Hide Navbar on Medium and Larger Screens */
+@media (min-width: 768px) {
     .navbar-nav {
-        display: flex; /* Show navbar as flex layout */
-        position: static; /* Reset position for larger screens */
-        flex-direction: row; /* Align items horizontally */
-        background-color: transparent; /* Transparent background */
+        display: none; /* Hide the navbar on md and larger screens */
     }
 
-    /* Hide Hamburger Icon on Larger Screens */
     .navbar-toggler {
-        display: none;
+        display: none; /* Hide hamburger icon on md and larger screens */
     }
 }
 
