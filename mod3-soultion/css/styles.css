@@ -1,8 +1,31 @@
 /* styles.css */
 
+/* Apply black color to all text */
 body {
-    color: #000000 !important; /* Black */
+    color: #000000; /* Black */
 }
+
+/* Custom styles for navbar collapse */
+.custom-navbar-collapse {
+    background-color: #f0f0f0; /* Light gray background for navbar collapse */
+}
+
+/* Custom styles for navbar links */
+.navbar-nav .nav-item .nav-link {
+    border: 1px solid #000000; /* Black border */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Ensure that the active link has consistent styles */
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #000000; /* Black border */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
 
 /* Custom styles for the navbar */
 .navbar {
