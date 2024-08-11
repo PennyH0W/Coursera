@@ -38,6 +38,18 @@
     border-radius: 0; /* Remove rounded corners */
 }
 
+/* Custom Card Body Styles*/
+#sushi {
+    background-color: #e9ecef; /* Example: Slightly darker gray background */
+}
+#sushi {
+    background-color: #c5cad0; /* Example: Slightly darker gray background */
+}
+#sushi {
+    background-color: #6d6f71; /* Example: Slightly darker gray background */
+}
+
+ 
 /* Custom gray background for header area*/
 .bg-gray {
     background-color: #97999d; /* Dark gray */
