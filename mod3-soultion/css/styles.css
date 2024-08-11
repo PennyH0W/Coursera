@@ -46,10 +46,16 @@ footer {
     }
 
 /* Media query for medium and large screens */
+/* Hide Navbar and Hamburger Icon Larger Screens */
 @media (min-width: 768px) {
-    .navbar-toggler, /* Assuming this is the class for the hamburger icon */
-    .navbar-collapse { /* Assuming this is the class for the expanded navbar */
-        display: none !important;;
+    .navbar-nav {
+        display: none; /* Hide the navbar */
     }
+
+    /* Hide Hamburger Icon on Larger Screens */
+    .navbar-toggler {
+        display: none;
+    }
+}
 
 }
