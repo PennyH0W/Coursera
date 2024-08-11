@@ -15,6 +15,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Space between title and hamburger */
+    position: relative; /* Ensure positioning of dropdown menu is relative to header */
 }
 
 /* Food, LLC Title */
@@ -37,25 +38,55 @@ header h1 {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%288%2c 8%2c 8%2c 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     display: block;
 }
-
-/* Collapsible Menu Styles */
+/* General Navbar Styles */
 .navbar-nav {
     width: 100%;
     background-color: #007bff; /* Match header background color */
+    z-index: 1000; /* Ensure dropdown is on top */
 }
 
-.nav-item {
-    text-align: center;
+/* Navbar for Small Screens */
+@media (max-width: 767px) { /* Adjust this breakpoint as needed */
+    .navbar-nav {
+        position: absolute; /* Position dropdown below header */
+        top: 80px; /* Position it right below the header */
+        left: 0;
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffffff;
+        padding: 1rem; /* Add padding for better spacing */
+        display: block; /* Ensure full width for each menu item */
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: #0056b3; /* Darker background on hover */
+    }
 }
 
-.nav-link {
-    color: #ffffff;
-    padding: 1rem; /* Add padding for better spacing */
-    display: block; /* Ensure full width for each menu item */
-}
+/* Navbar for Larger Screens */
+@media (min-width: 768px) {
+    .navbar-nav {
+        position: static; /* For larger screens, display dropdown in normal flow */
+        top: auto;
+        left: auto;
+        display: flex; /* Horizontal menu layout */
+        flex-direction: row; /* Align menu items in a row */
+    }
 
-.nav-link:hover {
-    background-color: #0056b3; /* Darker background on hover */
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem; /* Adjust padding for larger screens */
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: transparent; /* Remove background color on hover */
+    }
 }
 
 /* Show hamburger only on small screens and below */
@@ -73,6 +104,7 @@ header h1 {
     font-weight: bold;
     text-decoration: none;
 }
+
 
 /* Container Styles */
 .container {
