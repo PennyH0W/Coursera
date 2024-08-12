@@ -209,9 +209,10 @@ h4 {
 /* Flexbox layout for card body */
 .card-body {
     display: flex;
+    flex-grow: 1; /* Allow card body to take up available space */
     flex-direction: column; /* Stack content vertically */
     flex-grow: 1; /* Allow card body to take up available space */
-    overflow: auto; /* Add scroll if content overflows */
+    justify-content: space-between; /* Space out the content evenly */
 }
 
 /* Align "Back to Top" link at the bottom of the card */
