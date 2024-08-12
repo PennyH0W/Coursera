@@ -3,18 +3,55 @@
 /* Apply black color to all text */
 body {
     color: #000000; /* Black */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.0rem; /* Adjust font size */
+    color: #333; /* Dark gray color for contrast */
+    text-align: center; /* Center align */
+    margin-top: 1rem; /* Top margin */
+    margin-bottom: 1rem; /* Bottom margin */
+}
+
+h2 {
+    font-size: 1.75rem; /* Adjust font size */
+    color: #444; /* Slightly lighter gray */
+    text-align: center; /* Center align */
+    margin-top: 0; /* Top margin */
+    margin-bottom: 1rem; /* Bottom margin */
+}
+
+h3 {
+    font-size: 1.2rem; /* Adjust font size */
+    color: #555; /* Even lighter gray */
+    text-align: center; /* Center align */
+    margin-top: 1rem; /* Top margin */
+    margin-bottom: 1rem; /* Bottom margin */
+}
+
+h4 {
+    font-size: 1.0rem; /* Adjust font size */
+    color: #666; /* Lighter gray */
+    text-align: center; /* Center align */
+    margin-top: 1.5rem; /* Top margin */
+    margin-bottom: 1rem; /* Bottom margin */
 }
 
 /* Custom styles for navbar collapse */
 .custom-navbar-collapse {
     background-color: #f0f0f0; /* Light gray background for navbar collapse */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
 }
 
 /* Custom styles for navbar links */
 .navbar-nav .nav-item .nav-link {
     border: 1px solid #000000; /* Black border */
     padding: 0; /* Remove padding */
-    margin-left: 15px; /* Add space to the left of each link */
+    margin: 0; /* Remove margins */
     background-color: #f0f0f0; /* Light gray background */
     width: 100%;
     color: black;
@@ -25,7 +62,7 @@ body {
     background-color: #f0f0f0; /* Light gray background */
     border: 1px solid #000000; /* Black border */
     padding: 0; /* Remove padding */
-    margin-left: 15px; /* Add space to the left of each link */
+    margin: 0; /* Remove margins */
     width: 100%;
     color: black;
 }
@@ -33,13 +70,15 @@ body {
 
 /* Custom styles for the navbar */
 .navbar {
-    margin-bottom: 20px;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #343a40; /* Darker gray text color for better contrast */
-    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove padding */
+    margin-left: 2rem; /* Set margins */
 }
 
 /* Custom styles for navbar-header */
@@ -48,10 +87,36 @@ body {
     justify-content: space-between; /* Space out the brand and toggler */
     align-items: center; /* Center items vertically */
     width: 100%; /* Ensure the header takes full width */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+/* Style for nav links container */
+.nav-links {
+    display: flex; /* Arrange links in a row */
+    justify-content: center; /* Center the links horizontally */
+    flex-grow: 1; /* Allow this container to grow and take up available space */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove bullet points */
+    text-align: center;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space out the list items */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
 }
 
 .navbar-nav .nav-link {
     font-size: 1.2rem;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    align-content: center;
+    text-align: center;
 }
 
 /* Ensure the collapse (hamburger icon) is still right-aligned */
@@ -87,7 +152,7 @@ body {
 }
 
 .card-title {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: center; /* Center the text horizontally */
 }
 
@@ -119,7 +184,7 @@ body {
 /* Media query for medium screens and smaller */
 @media (max-width: 768px) {
     .card-title {
-        font-size: 1.25rem;
+        /* font-size: 1.25rem; */
         width: 100%;
         padding: 5px;
     }
