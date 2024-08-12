@@ -3,8 +3,10 @@
 /* Apply black color to all text */
 body {
     color: #000000; /* Black */
+    font-family: 'ADLaM Display', Arial, sans-serif; /* Apply ADLaM Display font as the default with fallback options */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
+
 }
 
 /* Heading Styles */
@@ -76,7 +78,7 @@ h4 {
 
 .navbar-brand {
     font-size: 2.5rem;
-    color: #343a40; /* Darker gray text color for better contrast */
+    color: black !important; /* Force the text color to black */
     padding: 0; /* Remove padding */
     margin-left: 2rem; /* Set margins */
 }
@@ -146,9 +148,24 @@ h4 {
     padding: 0%;
 }
 
+/* Show Navbar and Hamburger Icon for Small Screens */
+.navbar-nav {
+    display: block; /* Ensure the navbar is visible */
+}
+
+.navbar-toggler {
+    display: block; /* Ensure the hamburger icon is visible */
+}
+
 /* Custom styles for the card */
+
+/* Custom background color for cards */
 .card {
-    border-radius: 0.5rem;
+    background-color: #d4dae0; /* Gray background */
+    color: black;
+    border: 1px solid #dee2e6; /* Optional: Customize border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Customize shadow */
+    border-radius: 0; /* Remove rounded corners */
 }
 
 .card-title {
@@ -159,30 +176,112 @@ h4 {
 .card-text {
     font-size: 1rem;
     line-height: 1.5;
+    font-style: italic;
+    text-align: center;
 }
 
-/* Custom background color for cards */
-.card {
-    background-color: #d4dae0; /* Gray background */
-    color: black
-    border: 1px solid #dee2e6; /* Optional: Customize border color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Customize shadow */
-    border-radius: 0; /* Remove rounded corners */
-}
-
- 
 /* Custom gray background for header area*/
 .bg-gray {
     background-color: #97999d; /* Dark gray */
     color: black;
 }
 
-
-
 /* Responsive adjustments */
 
-/* Media query for medium screens and smaller */
-@media (max-width: 768px) {
+
+    
+/* Default styling for cards */
+.card {
+    border-radius: 0; /* Remove rounded corners */
+    background-color: #d4dae0; /* Gray background */
+    color: black;
+    border: 1px solid #dee2e6; /* Border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    border-radius: 0; /* Remove rounded corners */
+    display: flex;
+    justify-content: space-between; /* Ensure footer is at the bottom */
+    flex-direction: column; /* Stack child elements vertically */
+    height: 100%; /* Set your desired fixed height */
+    overflow: hidden; /* Remove scroll bars */
+}
+
+/* Flexbox layout for card body */
+.card-body {
+    display: flex;
+    flex: 1; /* Allow the body to take up available space */
+    flex-direction: column; /* Stack content vertically */
+    flex-grow: 1; /* Allow card body to take up available space */
+    justify-content: space-between; /* Space out the content evenly */
+}
+
+/* Align "Back to Top" link at the bottom of the card */
+.card-footer {
+    height: 80px;
+    color: #0056b3;
+    display: flex; /* Use flexbox to center content */
+    margin-top: auto; /* Pushes footer to the bottom */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-end; /* Align content to the bottom */
+    text-align: center; /* Center text horizontally */
+    padding: 0; 
+    margin: 0;
+    border: 0;
+    background-color: transparent; /* Ensure background is transparent */
+}
+
+/* Styles for the "Back to Top" link */
+.card-footer a {
+    text-decoration: none; /* Remove underline from link */
+    background-color: transparent; /* Ensure background is transparent */
+    color: #007bff; /* Blue color for the link */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    margin: 0;
+    border: 0;
+    padding: 0 0 2rem 0;
+    text-align: center;
+    align-items: center;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-end; /* Align to the bottom */
+}
+
+/* Hover effect for the "Back to Top" link */
+.card-footer a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+.card-footer h4 {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove any padding */
+    background-color: transparent; /* Ensure background is transparent */
+    text-align: center; /* Center the content horizontally */
+    display: inline-block; /* Ensure the h4 acts like a block for centering */
+}
+
+.card-footer h4 a {
+    display: inline-block; /* Make the link an inline block to center it */
+    text-align: center; /* Ensure the text is centered */
+    color: inherit; /* Inherit the color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+/*  List formatting */
+ul {
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Removes default padding */
+    text-align: center; /* Centers the list items */
+}
+
+ul li {
+    margin: 0 10px; /* Adds some spacing between the items (adjust as needed) */
+}
+
+/*  Responsive styles */
+
+/* Media query for mobile screens */
+@media (max-width: 576px) {
     .card-title {
         /* font-size: 1.25rem; */
         width: 100%;
@@ -192,69 +291,21 @@ h4 {
     .card-text {
         font-size: 0.9rem;
     }
+}
     
-/* Default styling for cards */
-.card {
-    border-radius: 0.5rem;
-    background-color: #d4dae0; /* Gray background */
-    color: black;
-    border: 1px solid #dee2e6; /* Border color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    border-radius: 0; /* Remove rounded corners */
-    display: flex;
-    flex-direction: column; /* Stack child elements vertically */
-    height: 400px; /* Set your desired fixed height */
-}
-
-/* Flexbox layout for card body */
-.card-body {
-    display: flex;
-    flex-grow: 1; /* Allow card body to take up available space */
-    flex-direction: column; /* Stack content vertically */
-    flex-grow: 1; /* Allow card body to take up available space */
-    justify-content: space-between; /* Space out the content evenly */
-}
-
-/* Align "Back to Top" link at the bottom of the card */
-.card-footer {
-    margin-top: auto; /* Pushes footer to the bottom */
-    text-align: center; /* Center text horizontally */
-    padding: 1rem; /* Add padding for better spacing */
-}
-
-/* Styles for the "Back to Top" link */
-.card-footer a {
-    text-decoration: none; /* Remove underline from link */
-    color: black; /* Link color */
-}
-
-
-    /* Show Navbar and Hamburger Icon for Small Screens */
-    .navbar-nav {
-        display: block; /* Ensure the navbar is visible */
-    }
-
-    .navbar-toggler {
-        display: block; /* Ensure the hamburger icon is visible */
-    }
-}
-
-/* Media query for medium and large screens */
+/* Media query for small, medium, and large screens */
 
 /* Hide Navbar and Hamburger Icon Larger Screens */
-@media (min-width: 769px) {
+@media (min-width: 577px) {
     .navbar-nav {
-        display: none; /* Hide the navbar */
+        display: none !important; /* Hide the navbar */
     }
 
     .navbar-toggler {
-        display: none; /* Hide the hamburger icon */
+        display: none !important; /* Hide the hamburger icon */
     }
-}
 
-/* Fixed height for cards on medium screens and up */
-@media (min-width: 768px) {
     .card {
-        height: 400px; /* Set your desired fixed height */
+        height: 400px; /* Fixed height for cards on medium screens and up */
     }
 }
