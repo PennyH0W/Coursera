@@ -193,6 +193,41 @@ h4 {
         font-size: 0.9rem;
     }
     
+/* Default styling for cards */
+.card {
+    border-radius: 0.5rem;
+    background-color: #d4dae0; /* Gray background */
+    color: black;
+    border: 1px solid #dee2e6; /* Border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    border-radius: 0; /* Remove rounded corners */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    height: 400px; /* Set your desired fixed height */
+}
+
+/* Flexbox layout for card body */
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    flex-grow: 1; /* Allow card body to take up available space */
+    overflow: auto; /* Add scroll if content overflows */
+}
+
+/* Align "Back to Top" link at the bottom of the card */
+.card-footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+    text-align: center; /* Center text horizontally */
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+/* Styles for the "Back to Top" link */
+.card-footer a {
+    text-decoration: none; /* Remove underline from link */
+    color: black; /* Link color */
+}
+
+
     /* Show Navbar and Hamburger Icon for Small Screens */
     .navbar-nav {
         display: block; /* Ensure the navbar is visible */
